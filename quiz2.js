@@ -1,7 +1,4 @@
 //Samuel Koop's Quiz 2 Javascript for Mrs. Lambey's Advanced Web 2021
-var z = document.getElementById("extra-text");
-  z.style.display = "none";
-
 function showMore() {
   var y = document.getElementById("extra-text");
     y.style.display = "block";
@@ -10,4 +7,14 @@ function showMore() {
 function showLess() {
   var x = document.getElementById("extra-text");
     x.style.display = "none";
+}
+
+function turnGreen() {
+  var shrek = document.getElementById("extra-text");
+    shrek.style.backgroundColor = "green";
+}
+
+function turnBlue() {
+  var smurf = document.getElementById("extra-text");
+    smurf.style.backgroundColor = "rgb(102 153 204 / 0.8)";
 }
