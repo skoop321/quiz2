@@ -18,3 +18,23 @@ function turnBlue() {
   var smurf = document.getElementById("extra-text");
     smurf.style.backgroundColor = "rgb(102 153 204 / 0.8)";
 }
+
+function validateForm() {
+  let a = document.forms["customerForm"]["name"].value;
+  if (a == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  let b = document.forms["customerForm"]["email"].value;
+  if (b == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+
+  let c = document.forms["customerForm"]["message"].value;
+  if (c == "") {
+    alert("Message must be filled out");
+    return false;
+  }
+}
